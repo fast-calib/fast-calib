@@ -8,6 +8,7 @@ Fast-Calib is released under the terms of the GNU GPL v3.0, and thus free for re
 
 ## Table of contents
 
+- [Dependencies](#dependencies)
 - [Compiling](#compiling)
 	- [Linux](#linux)
 	- [MacOS](#macos)
@@ -15,7 +16,7 @@ Fast-Calib is released under the terms of the GNU GPL v3.0, and thus free for re
 - [Testing](#testing)
 - [Examples](#examples)
 
-#### Dependencies
+## Dependencies
 
 | Dependency | Version |
 |------------|------------|
