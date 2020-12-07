@@ -15,14 +15,17 @@ Fast-Calib is released under the terms of the GNU GPL v3.0, and thus free for re
 - [Testing](#testing)
 - [Examples](#examples)
 
+#### Dependencies
+
+| Dependency | Version |
+------------------------
+| Eigen | 3.X |
 
 ## Compiling
 
 ### Linux
 
 This project was built and tested on Ubuntu 18.04 LTS and 20.04 LTS. 
-
-#### Dependencies
 
 ### MacOS
 
