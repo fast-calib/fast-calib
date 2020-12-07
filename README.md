@@ -18,7 +18,7 @@ Fast-Calib is released under the terms of the GNU GPL v3.0, and thus free for re
 #### Dependencies
 
 | Dependency | Version |
-------------------------
+|------------|------------|
 | Eigen | 3.X |
 
 ## Compiling
