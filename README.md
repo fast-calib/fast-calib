@@ -10,6 +10,11 @@ Fast-Calib is released under the terms of the GNU GPL v3.0, and thus free for re
 
 - [Compiling](#compiling)
 	- [Linux](#linux)
+	- [MacOS](#macos)
+	- [Windows](#windows)
+- [Testing](#testing)
+- [Examples](#examples)
+
 
 ## Compiling
 
@@ -29,6 +34,7 @@ This project was built and tested on macOS Catalina 10.15.
 
 This project was built and tested on Windows 10 with Visual Studio 2019 x64.
 
-## 
+## Testing
 
+## Examples
 
