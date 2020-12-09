@@ -1,0 +1,5 @@
+#pragma once
+
+#define fast_calib_VERSION_MAJOR @fast_calib_VERSION_MAJOR@
+#define fast_calib_VERSION_MINOR @fast_calib_VERSION_MINOR@
+#define fast_calib_VERSION_PATCH @fast_calib_VERSION_PATCH@
