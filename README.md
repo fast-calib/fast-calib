@@ -1,4 +1,4 @@
-# Fast Calibration - A Geometric Camera Calibration Solution
+# Fast Calib - A Geometric Camera Calibration Solution
 
 <p style="text-align: center;">
 	<img src="https://img.shields.io/badge/Release-0.0.1-blue.svg?style=flat" height="20" />
