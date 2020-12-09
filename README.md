@@ -57,3 +57,28 @@ This project was built and tested on Windows 10 with Visual Studio 2019 x64.
 ### <a name="building_testing">4.3 Testing</a>
 
 ## <a name="references">5. Detailed guide</a>
+
+## <a name="todo">6. TODO</a>
+
+### What do we want
+
+- Cross-platform build
+- Continuous integration
+- Documentation
+- Low number of dependencies (Optional CUDA, Optional SuiteSparse, ...)
+
+### What do we need
+
+- Setup CMake project
+- Setup CI in Github
+- Look into documentation builds (Doxygen, readthedocs website, ...)
+- Study and understand the original project
+
+### Tasks
+
+- Create dummy CMake project with Eigen dependency
+- Setup CI following a tutorial
+- Setup documentation build
+- Study and understand original project
+- Decide on the project structure
+
