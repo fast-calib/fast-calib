@@ -1,0 +1,39 @@
+name: Build on Windows
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout
+        uses: actions/checkout@latest
+      
+      - name: Get latest CMake
+        uses: lukka/get-cmake@latest
+
+      - name: Prepare vcpkg
+        uses: lukka/run-vcpkg@latest
+        with:
+          setupOnly: true
+      
+      - name: Install dependencies
+        run: |
+          $VCPKG_ROOT/vcpkg install eigen:windows-x64
+        shell: bash
+
+      # Runs a single command using the runners shell
+      - name: Run CMake
+        uses: lukka/run-cmake@latest
+        with:
+          cmakeGenerator: 'Ninja'  
+          cmakeListsTxtPath: '${{ github.workspace }}/CMakeLists.txt'
+          useVcpkgToolchainFile: true
+          cmakeAppendedArgs: '-DCMAKE_BUILD_TYPE=Release '
+          useShell: bash
+      

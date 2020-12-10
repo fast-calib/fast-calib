@@ -1,4 +1,4 @@
-name: Build on Ubuntu
+name: Build on MacOS
 
 on:
   push:
@@ -12,7 +12,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@latest
+      
+      - name: Get latest CMake
+        uses: lukka/get-cmake@latest
 
       - name: Install dependencies
         run: brew install eigen doxygen
