@@ -18,7 +18,7 @@ jobs:
         uses: lukka/get-cmake@latest
 
       - name: Prepare vcpkg
-        uses: lukka/run-vcpkg@latest
+        uses: lukka/run-vcpkg@v6
         with:
           setupOnly: true
       
@@ -29,7 +29,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run CMake
-        uses: lukka/run-cmake@latest
+        uses: lukka/run-cmake@v3
         with:
           cmakeGenerator: 'Ninja'  
           cmakeListsTxtPath: '${{ github.workspace }}/CMakeLists.txt'

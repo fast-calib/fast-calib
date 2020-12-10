@@ -6,6 +6,14 @@
 	<img src="https://img.shields.io/badge/License-BSD%203-blue.svg?style=flat" height="20" />
 </p>
 
+<p align="center">
+	<img src="https://github.com/fast-calib/fast-calib/workflows/Build%20on%20Ubuntu/badge.svg" height="20" />
+	&nbsp;
+	<img src="https://github.com/fast-calib/fast-calib/workflows/Build%20on%20MacOS/badge.svg" height="20" />
+	&nbsp;
+	<img src="https://github.com/fast-calib/fast-calib/workflows/Build%20on%20Windows/badge.svg" height="20" />
+</p>
+
 ## <a name="overview">Contents</a>
 
 <h3>
