@@ -1,8 +1,6 @@
 name: Build on MacOS
 
 on:
-  push:
-    branches: [main]
   pull_request:
     branches: [main]
 

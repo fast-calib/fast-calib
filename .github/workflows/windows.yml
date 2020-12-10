@@ -26,12 +26,14 @@ jobs:
           vcpkgGitCommitId: ec6fe06e8da05a8157dc8581fa96b36b571c1bd5
 
       # Runs a single command using the runners shell
-      - name: Run CMake
+      - name: Run CMake & Ninja
         uses: lukka/run-cmake@v3
+        id: runcmake
         with:
           cmakeGenerator: 'Ninja'  
+          cmakeListsOrSettingsJson: 'CMakeListsTxtBasic'
           cmakeListsTxtPath: '${{ github.workspace }}/CMakeLists.txt'
           useVcpkgToolchainFile: true
-          cmakeAppendedArgs: '-DCMAKE_BUILD_TYPE=Release '
-          useShell: bash
+          buildWithCMakeArgs: '-- -v'
+          buildDirectory: '${{ runner.workspace }}/b/ninja/'
       
