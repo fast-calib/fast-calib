@@ -89,4 +89,4 @@ This project was built and tested on Windows 10 with Visual Studio 2019 x64.
 - Setup documentation build
 - Study and understand original project
 - Decide on the project structure
-
+- Setup vcpkg as git submodule for CI and Windows build
