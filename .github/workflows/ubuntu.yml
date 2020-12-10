@@ -1,4 +1,4 @@
-name: Build
+name: Build on Ubuntu
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [master]
 
 jobs:
-  Ubuntu:
+  build-ubuntu:
     runs-on: ubuntu-latest
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -27,25 +27,3 @@ jobs:
       - name: Compile
         working-directory: build
         run: make -j2
-
-  MacOS:
-    runs-on: macos-latest
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Install dependencies
-        run: brew install eigen doxygen
-
-      # Runs a single command using the runners shell
-      - name: Configure CMake
-        run: |
-          mkdir -p build
-          cd build
-          cmake .. -DCMAKE_BUILD_TYPE=Release
-      
-      - name: Compile
-        working-directory: build
-        run: make -j2
-        
